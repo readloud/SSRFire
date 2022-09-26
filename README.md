@@ -5,8 +5,10 @@ It also has options to find XSS and open redirects.
 ![SSRFIRE](https://github.com/michaelben6/SSRFIRE/blob/master/static/ssrfire.png)
 
 ### Syntax
-./ssrfire.sh -d domain.com -s yourserver.com -f custom_file.txt -c cookies
 
+~~~
+./ssrfire.sh -d domain.com -s yourserver.com -f custom_file.txt -c cookies
+~~~
 
 **domain.com**        --->  The domain for which you want to test
 
@@ -66,9 +68,11 @@ Let it run for at least 10-15 minutes, and then if you want to continue, you can
 But if you want to test the URLs fetched till now, quit the process.
 Copy the raw_urls.txt inside of output/domain.com and place it outside the domain.com folder
 Now run
+
 ```
 ./ssrfire.sh -d domain.com -s yourserver.com -f /path/to/copied_raw_urls.txt
 ```
+
 Select yes when asked whether to delete the existing folder.
 
 This will skip the process of GAU fetching URLs.
